@@ -1,0 +1,155 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container-logo {
+    padding: 20px;
+    text-align: center;
+    background-color: #5a77ff;
+}
+
+.container-logo svg {
+    fill: #fff;
+}
+
+.sub-container {
+    display: flex;
+}
+
+.sub-sub-container1 {
+    flex: 0 0 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sub-sub-container2 {
+    flex: 1;
+    padding: 20px;
+}
+
+.sub-2-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-2-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+.sub-2-list li:hover {
+    color: #5a77ff;
+}
+
+.job-card {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.company {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.new,
+.featured {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #5a77ff;
+    margin-right: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.job-meta {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.job-meta li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.tags span:last-child {
+    margin-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sub-container {
+        flex-direction: column;
+    }
+    .sub-sub-container1 {
+        border-right: none;
+    }
+}
